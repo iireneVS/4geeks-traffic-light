@@ -16,7 +16,7 @@
     display: inline-block;
     margin-left: 200px;
     margin-top: 50px;
-    border-radius: 15px;
+    border-radius: 60px;
 }
 .light {
     width: 100px;
@@ -63,6 +63,7 @@
     }
 }
 .boton {
+
     margin-left: 140px;
     margin-top: 200px;
     position: fixed;
@@ -74,7 +75,7 @@
     transition: all 0.3s ease;
     display: inline-block;
     outline: none;
-    border-radius: 5px;
+    border-radius: 100px;
     border: none;
     background-size: 120% auto;
     background-image: linear-gradient(315deg, #b973c2 0%, #6c0f88 75%);
@@ -97,7 +98,7 @@
     transition: all 0.3s ease;
     display: inline-block;
     outline: none;
-    border-radius: 5px;
+    border-radius: 100px;
     border: none;
     background-size: 120% auto;
     background-image: linear-gradient(315deg, #7ec292 0%, #094b09 75%);

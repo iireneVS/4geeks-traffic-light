@@ -22,7 +22,7 @@ export function Home() {
                 } else if (selectedColor === "green") {
                     setSelectedColor("red");
                 }
-            }, 2000);
+            }, 600);
         }
 
         return () => clearInterval(intervalId);
