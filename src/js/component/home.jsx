@@ -10,11 +10,12 @@ export function Home() {
 	const [showPurple, setShowPurple] = useState(false);
 
 	return (
+		<div>
 		<div className="traffic-light text-center">
 			<div
 				onClick={() => {
 					setSelectedColor("red");
-					setShowPurple(false); // Oculta el disco morado al cambiar de color
+					setShowPurple(false); // Oculta el morado
 				}}
 				className={"light red" + (selectedColor === "red" ? " glow1" : "")}
 			></div>
@@ -22,7 +23,7 @@ export function Home() {
 			<div
 				onClick={() => {
 					setSelectedColor("yellow");
-					setShowPurple(false); // Oculta el disco morado al cambiar de color
+					setShowPurple(false); // Oculta el morado
 				}}
 				className={"light yellow" + (selectedColor === "yellow" ? " glow2" : "")}
 			></div>
@@ -30,13 +31,13 @@ export function Home() {
 			<div
 				onClick={() => {
 					setSelectedColor("green");
-					setShowPurple(false); // Oculta el disco morado al cambiar de color
+					setShowPurple(false); // Oculta el morado
 				}}
 				className={"light green" + (selectedColor === "green" ? " glow3" : "")}
 			></div>
 
 			
-			<button type="button" class="btn btn-secondary" onClick={() => setShowPurple(!showPurple)}>Botón</button>
+			
 
 			{showPurple && (
 				<div
@@ -48,7 +49,8 @@ export function Home() {
 				></div>
 			)}
 		</div>
-		
+		<button type="button" class="btn btn-secondary" onClick={() => setShowPurple(!showPurple)}>Botón</button>
+		</div>
 	);
 
 }
